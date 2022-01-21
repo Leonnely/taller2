@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    background-image: url("./Fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* Header */
+.titulo_Header{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.titulo_Header h1{
+    padding: 5px;  
+    font-size: 3rem;
+    font-weight: bold;
+}
+.titulo_Header p{
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+/* Section calculadora de cuadrados */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.section_General{
+    width: 85%;
+    height: 350px;
+    margin: 30px auto;
+
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 10px 42px 0 rgba(29, 37, 144, 0.37);
+    backdrop-filter: blur( 2.0px );
+    -webkit-backdrop-filter: blur( 2.0px );
+    border-radius: 10px;
+    border: 2px sorgba(15, 10, 10, 0.18);
+}
+.section_Triangle{
+    height: auto;
+}
+/* .section_Square h2 figure{
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+}
+.section_Square h2 figure img{
+    width: 100%;
+    
+} */
+.section_General h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 25px 40px 0 40px;
+    color: whitesmoke;
+    text-align: center;
+}
+.section_General form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.section_General form label{
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding: 10px 50px;
+    text-align: center;
+    color: whitesmoke;
+}
+#InputCuadrado,
+#InputTriangle1,
+#InputTriangle2,
+#InputTriangleAltura,
+#InputTriangleBase,
+#InputRadio{
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+}
+.btn_calcular,
+.btn_calcularTriangle,
+.btn_calcularCircle{
+    width: 150px;
+    height: 30px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    background-color: gray;
+    color: whitesmoke;
+    
+}
+.section_General ul{
+    margin: 15px 0;
+    margin-left: 80px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+.section_General ul li{
+    font-size: 1.8rem;
+    color: whitesmoke;
+    list-style: none;   
+}

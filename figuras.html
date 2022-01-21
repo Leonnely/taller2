@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./figuras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Geometric figures</title>
+
+</head>
+<body>
+    <header>
+        <div class="titulo_Header">
+           <h1>
+            Figuras Geometricas
+            </h1>
+            <p>Primer taller del curso practico de JavaScript</p> 
+        </div>       
+    </header>
+    <main>
+        <section class="section_General">
+            <!-- <figure><img src="./Assets/square.png" alt=""></figure> -->
+            <h2> Calcula el area y perimetro de un cuadrado</h2>
+            <form action="">
+                <label for="InputCuadrado">
+                    Escribe cuanto mide cada lado de tu cuadrado:
+                </label>
+                <input id="InputCuadrado" type="number" placeholder="Ingrese una medida">
+                <button class="btn_calcular" type="button" onclick="CalcPerCuadrado()">
+                    Calcular
+                </button>
+                <!-- <button type="button" onclick="CalcAreaCuadrado()">
+                    Calcular el area
+                </button> -->
+            </form>
+                <ul>
+                    <li id="result">Perimetro: </li>
+                    <li id="result2">Area: </li>
+                </ul>               
+        </section>
+
+        <!-- aaaaaaaaaaaaaaaaaaaaaaaaaa -->
+        <section class="section_General section_Triangle">
+            <!-- <figure><img src="./Assets/square.png" alt=""></figure> -->
+            <h2> Calcula el area y perimetro de un triangulo</h2>
+            <form action="">
+                <label for="InputCuadrado">
+                    Escribe cuanto mide cada lado de tu cuadrado:
+                </label>
+                <input id="InputTriangle1" type="number" placeholder="Lado A">
+                <input id="InputTriangle2" type="number" placeholder="Lado B">
+                <input id="InputTriangleAltura" type="number" placeholder="Altura">
+                <input id="InputTriangleBase" type="number" placeholder="Base">
+                <button class="btn_calcularTriangle" type="button" onclick="CalculosTriangle()">
+                    Calcular
+                </button>
+                <!-- <button type="button" onclick="CalcAreaCuadrado()">
+                    Calcular el area
+                </button> -->
+            </form>
+                <ul>
+                    <li id="resultTriangle">Perimetro: </li>
+                    <li id="resultTriangle2">Area: </li>
+                </ul>               
+        </section>
+        <section class="section_General section_Circle">
+            <!-- <figure><img src="./Assets/square.png" alt=""></figure> -->
+            <h2> Calcula el area y perimetro de un circulo</h2>
+            <form action="">
+                <label for="InputCircle">
+                    Escribe cuanto mide el radio del circulo:
+                </label>
+                <input id="InputRadio" type="number" placeholder="Ingrese el radio">
+                <button class="btn_calcularCircle" type="button" onclick="CalculosCircle()">
+                    Calcular
+                </button>
+                <!-- <button type="button" onclick="CalcAreaCuadrado()">
+                    Calcular el area
+                </button> -->
+            </form>
+                <ul>
+                    <li id="resultCircle1">Perimetro: </li>
+                    <li id="resultCircle2">Area: </li>
+                </ul>               
+        </section>   
+    </main>
+    
+    <script src="./figuras.js"></script>
+</body>
+</html>
